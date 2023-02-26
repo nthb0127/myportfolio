@@ -8,26 +8,26 @@
 
 ### portfolio
 ポートフォリオサイトのソースコードです。<br>
-*index.html
+* index.html
   トップページのソースコードです。 
-*works.html
+* works.html
   製作物をまとめたページのソースコードです。
-*cssフォルダ
+* cssフォルダ
   cssをまとめています。
-*jsフォルダ
+* jsフォルダ
   jsをまとめています。
-*particlesフォルダ
+* particlesフォルダ
   [particle.jsのジェネレータ](https://vincentgarreau.com/particles.js/ "particle.js")で製作したコードをまとめています。<br>
 
 ### illustrator
 架空のイラストレーターのサイトのソースコードです。
-*illustrator.html
+* illustrator.html
   トップページのソースコードです。
 ※cssフォルダ、jsフォルダについては同上のため割愛します。
 
 <br>
 ### popupbook
 パララックスを用いたうごくWebえほんのソースコードです。
-*catandmagtunodon.html
+* catandmagtunodon.html
   コンテンツページのソースコードです。
 ※cssフォルダ、jsフォルダについては同上のため割愛します
