@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>PORTFOLIO - Works</title>
+<meta name="robots" content="noindex, nofollow">
+<!-- <meta property="og:url" content=" ページの URL" /> -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="PORTFOLIO - Works" />
+<meta property="og:description" content="my works page" />
+<meta property="og:site_name" content="Works-FujitaYuko" />
+<!-- <meta property="og:image" content=" サムネイル画像の URL" /> -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<!-- <link rel="stylesheet" href="https://use.typekit.net/wfo6och.css"> -->
+
+<link rel="stylesheet" type="text/css" href="lib/ress.min.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/vzr3omj.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.0.4/swiper-bundle.min.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.css">
+<link rel="stylesheet" type="text/css" href="css/animation.css">
+<link rel="stylesheet" type="text/css" href="css/popup.css">
+<link rel="stylesheet" type="text/css" href="lib/particle.css">
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'hdn7msu',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+</head>
+
+<body>
+  <div id="particles-js"></div> 
+
+  <div id="loader">
+  <header>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#">Works</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">contact</a></li>        
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide1">
+        <div class="slide-media img-cover"><img src="img/test1.png" alt="" data-swiper-parallax-scale="1.5" data-swiper-parallax-x="80%"></div>
+        <p class="text"><span class="mask-base"><span class="mask">
+          <a href="#portfolio-popup" class="hover-arrow">MyPortfolioSite</a>
+        </span></span></p>
+      </div>
+      <div class="swiper-slide slide2">
+        <div class="slide-media img-cover"><img src="img/illust.png" alt="" data-swiper-parallax-scale="1.5" data-swiper-parallax-x="80%"></div>
+        <p class="text"><span class="mask-base"><span class="mask">
+          <a href="#illust-popup" class="hover-arrow">Fiction-IllustratorSite</a>
+        </span></span></p>
+      </div>
+      <div class="swiper-slide slide3">
+        <div class="slide-media img-cover"><img src="img/cat.png" alt="" data-swiper-parallax-scale="1.5" data-swiper-parallax-x="80%"></div>
+        <p class="text popuptext"><span class="mask-base"><span class="mask">
+          <a href="#book-popup" class="hover-arrow">Pop-Up Book</a>
+        </span></span></p>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div id="illust-popup">
+    <span class="popup-close"><a href="#">&times</a></span>
+    <div class="illust popup">
+      <div class="illust-demo demo-img"><img src="img/illust_demo.png"></div>
+      <div class="popup-cont">
+        <h1>架空のイラストレーターのポートフォリオサイト</h1>
+        <p class="site-link">サイトリンク : <a href="illustrator/illustrator.html" class="hover-underline" target="_blank" rel="noopener noreferrer">Fiction-IllustratorSite</a></p>
+        <dl>
+          <dt class="slash">製作期間</dt>
+          <dd>約20日</dd>
+          <dt class="slash">コンセプト</dt>
+          <dd>
+            自作のイラストを使用するというテーマでWebサイトを製作しました。<br>
+            掲載しているイラストはすべて自作のものです。<br>
+            イラストを大きく表示するためにフリップのような形式で製作していましたが、<br>
+            イラストとサイトの雰囲気を合わせるため、よりシンプルなデザインに変更し、現在の形になりました。<br>
+            作成の為に、現在活動されているイラストレーターやフォトグラファーの方々のサイトを<br>
+            参考にさせて頂きました。<br>
+          </dd>
+          <dd class="movie">
+            <p>旧デザイン</p>
+            <video muted playsinline controls>
+              <source src="movie/oldsite.mp4" type="video/mp4">
+            </video>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div id="book-popup">
+    <span class="popup-close"><a href="#">&times</a></span>
+    <div class="book popup">
+      <div class="book-demo demo-img"><img src="img/cat_demo.png"></div>
+      <div class="popup-cont">
+        <h1>パララックスアニメーションを用いたWebえほん</h1>
+        <p class="site-link">サイトリンク : <a href="parallax/catandmagtunodon.html" class="hover-underline" target="_blank" rel="noopener noreferrer">つりをするねこ</a></p>
+        <dl>
+          <dt class="slash">製作期間</dt>
+          <dd>約15日</dd>
+          <dt class="slash">コンセプト</dt>
+          <dd>
+            仕掛け絵本をモチーフに製作しました。<br>
+            ひらがなが読める子供が、保護者の方と一緒に楽しめるように、<br>
+            マウスやジャイロの動きに対応してイラストが動くものにしました。<br>
+            使用した物語とイラストは自作のものです。<br>
+            絵本らしい、柔らかい雰囲気になるように意識しました。<br>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio-popup">
+    <span class="popup-close"><a href="#">&times</a></span>
+    <div class="portfolio popup">
+      <div class="book-demo demo-img"><img src="img/portfolio-demo.png"></div>
+      <div class="popup-cont">
+        <h1>ポートフォリオサイト(このサイト)</h1>
+        <p class="site-link">サイトリンク : <a href="index.html" class="hover-underline" target="_blank" rel="noopener noreferrer">ポートフォリオサイト(トップへ飛びます)</a></p>
+        <dl>
+          <dt class="slash">製作期間</dt>
+          <dd>約15日</dd>
+          <dt class="slash">コンセプト</dt>
+          <dd>
+            私の製作物、スキル、プロフィールをまとめたサイトです。<br>
+            アニメーションに特徴を持たせ、機能として役割を持ちつつも印象的になるよう工夫しました。<br>
+            製作物については、特に主張したいポイントなので、別ページで表示しています。<br>
+            製作物を象徴するコラージュは、Adobe illustratorを用いて製作しました。
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9.0.4/swiper-bundle.min.js"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="lib/particle.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/animation.js"></script>
+</html>

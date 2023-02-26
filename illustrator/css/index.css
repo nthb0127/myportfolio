@@ -1,0 +1,191 @@
+html{
+  display: block;
+}
+
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(130deg, #c0c6cb, #fafafa) ;
+  background-size: cover;
+  overflow-wrap: break-word;
+}
+
+h1{
+  font-size:2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size:1.5rem;
+  line-height: 4.5rem
+}
+
+h3{
+  font-size: 1.3rem;
+  line-height: 4rem;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.7rem
+}
+
+#container{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#header{
+  position: fixed;
+  width: 17%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background:#fff;
+  padding: 0;
+}
+
+.logo a{
+  display: block;
+  width: 80%;
+  margin: 3em auto 4em;
+}
+
+
+.logo img{
+  width: 100%;
+}
+
+.tab{
+  font-family: prestige-elite-std,monospace;
+  letter-spacing: -0.1em;
+}
+
+#main {
+  width:80%;
+  right: 0px;
+  margin-left: 17%;
+  padding: 1em ;
+}
+
+@media screen and (max-width:768px){
+  #header{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(130deg, #c0c6cb, #fafafa) ;
+  }
+
+  .logo a{
+    height: 70px;
+    width: auto;
+    margin: 0;
+    padding: 10px 10px;
+  }
+
+  .logo img{
+    height: 100%;
+    width: auto;
+  }
+
+  #main {
+    width:100%;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+.area {
+  display: none;
+  opacity: 0;
+  background: #fff;
+  padding:50px 20px;
+}
+
+.area.is-active {
+    display: block;
+    animation-name: displayAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.topimg{
+  margin-top: 0.8em;
+}
+
+.topimg img{
+  width: 100%;
+}
+
+.title{
+  text-align: right;
+  margin-top: 40px;
+}
+
+.title h2{
+  font-family: grecian-light-face, serif;
+  letter-spacing: 0.1rem;
+}
+
+#about {
+  height: 100vh;
+  background: url(../img/138.PNG) no-repeat center;
+  background-size: cover;
+}
+
+.profile {
+    width:100%;
+    max-width: 400px;
+    padding: 40px 40px 0;
+    margin: 7em 0 0 3em;
+    text-align: left;
+    letter-spacing: 0.03em;
+    color: #f5f5f5
+}
+
+.profile h3{
+  font-family: prestige-elite-std,monospace;
+  letter-spacing: -0.1em;
+}
+
+.profile .note{
+  padding: 2.5em 0;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+@media screen and (max-width:768px){
+
+  .topimg{
+    width: 100%;
+    height: 400px;
+  }
+
+  .topimg img{
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .profile{
+    margin: 10em auto 0;
+    background: rgba(255,255,255,0.8);
+    color: #1f1f1f;
+  }
+}
+
+#contact p{
+  text-align: right;
+}

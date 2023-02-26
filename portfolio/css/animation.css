@@ -1,0 +1,213 @@
+.mask-base{
+  animation-name:mask-base;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  position: relative;
+  overflow: hidden;
+  opacity:0;
+}
+
+@keyframes mask-base{
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;  
+}
+}
+
+.swiper-slide-active p .mask{
+  animation-name:maskapp;
+  animation-duration:1s;
+  animation-delay: 0.6s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+
+@keyframes maskapp{
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+}
+}
+
+.swiper-slide-active p .mask-base::before{
+  animation-name:maskextend;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+}
+
+@keyframes maskextend{
+  0% {
+    transform-origin:right;
+    transform:scaleX(0);
+  }
+  50% {
+    transform-origin:right;
+    transform:scaleX(1);
+  }
+  50.001% {
+    transform-origin:left;
+  }
+  100% {
+    transform-origin:left;
+    transform:scaleX(0);
+  }
+}
+
+p .mask-base{
+    opacity: 0;
+}
+
+.swiper-pagination-bullet{
+  transition: all 0.7s;
+}
+
+.swiper-pagination-bullet-active {
+  transform: rotate(45deg);
+  transition-timing-function: ease-in-out;
+}
+
+.hover-arrow{
+  position: relative;
+}
+
+.hover-arrow:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  right: -2em;
+  transform: translateY(calc(-50% - 2px)) rotate(30deg);
+  width: 17px;
+  height: 3px;
+  transition: 0.3s;
+  opacity: 0;
+}
+.hover-arrow:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -2em;
+  transform: translateY(-50%);
+  width: 65px;
+  height: 3px;
+  transition: 0.3s;
+  opacity: 0;
+}
+.hover-arrow:hover:before,
+.hover-arrow:hover:after {
+  right: -80px;
+  opacity: 1;
+}
+
+.swiper-slide .hover-arrow:before,
+.swiper-slide .hover-arrow:after,
+.top_works .hover-arrow:before,
+.top_works .hover-arrow:after{
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width:768px) {
+  .hover-arrow:before {
+    width: 15px;
+    height: 2px;
+  }
+  .hover-arrow:after {
+    width:50px;
+    height: 2px;
+  }
+}
+
+.hover-underline{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.hover-underline::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+
+.hover-underline:hover::after {
+  visibility: visible;
+  opacity: 1; 
+}
+
+.fade{
+  opacity: 0;
+}
+
+.fadein{
+  animation-name:fadeIn;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.scrolldown1{
+  position:absolute;
+  left:50%;
+  bottom:15px;
+  height:70px;
+}
+
+.scrolldown1 span{
+  position: absolute;
+  left:-20px;
+  top: -20px;
+  color: #f1f1f1;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.scrolldown1::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1.5px;
+  height: 80px;
+  background: #eee;
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity:0;
+}
+
+@keyframes pathmove{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:30px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:50px;
+    opacity: 0;
+  }
+}

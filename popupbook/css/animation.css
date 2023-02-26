@@ -1,0 +1,19 @@
+.title_animation{
+  animation-name: bound;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-duration: .8s;
+  animation-iteration-count: 2;
+}
+
+@keyframes bound {
+  0%   {
+    transform: translate(0%, 0%) rotateX(0deg);
+  }
+  60% {
+    transform: translate(0%, 0%) rotateX(50deg);
+  }
+  100%   {
+    transform: translate(0%, 0%) rotateX(0deg);
+  }
+}

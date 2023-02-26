@@ -1,0 +1,55 @@
+ul.gallpic{
+  list-style: none;
+}
+
+.gallpic{
+  columns: 3;
+  padding:0 15px;
+  margin:0;
+}
+
+.gallpic li {
+  margin-bottom: 20px;
+  list-style:none;
+  overflow: hidden;
+}
+
+.gallpic img{
+	width:100%;
+	height:auto;
+	vertical-align: bottom;
+  transform: scale(1);
+  transition: .3s ease-in-out;
+  opacity: 1;
+}
+
+.gallpic li:hover img{
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+	.gallpic{
+	columns: 2;
+	}
+}
+
+.flip{
+animation-name:flipAnime;
+animation-duration:0.8s;
+animation-fill-mode:forwards;
+perspective-origin:left center;
+opacity:0;
+}
+
+@keyframes flipAnime{
+  from {
+   transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+  opacity: 0;
+  }
+
+  to {
+  transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+  opacity: 1;
+  }
+}
