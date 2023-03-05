@@ -10,7 +10,10 @@ body{
     background:linear-gradient(50deg, #3c4b69,#252426,#274659);
 	background-size: 200% 200%;
     animation: bggradient 30s infinite;
-    line-break: strict;
+}
+
+#contents{
+    overflow-x: hidden;
 }
 
 @keyframes bggradient{
@@ -40,6 +43,12 @@ p{
 
 a{
     text-decoration: none;
+}
+
+@media screen and (max-width:768px){
+    h2{
+        font-size: 38px;
+    }
 }
 
 #loader{
@@ -83,6 +92,19 @@ a{
     font-size: 20px;
     color: #f1f1f1;
     letter-spacing: 2px;
+}
+
+@media screen and (max-width:768px) {
+    .header-nav ul{
+        width: 80%;
+        max-width: 400px;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+    }
+    .header-nav ul li{
+        padding-left: 20px;
+    }
 }
 
 .header-nav ul li a::before{

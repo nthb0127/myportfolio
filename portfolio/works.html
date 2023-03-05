@@ -4,15 +4,13 @@
 <meta charset="utf-8">
 <title>PORTFOLIO - Works</title>
 <meta name="robots" content="noindex, nofollow">
-<!-- <meta property="og:url" content=" ページの URL" /> -->
+<meta property="og:url" content="https://yuko-fujtia.com/works" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="PORTFOLIO - Works" />
 <meta property="og:description" content="my works page" />
 <meta property="og:site_name" content="Works-FujitaYuko" />
-<!-- <meta property="og:image" content=" サムネイル画像の URL" /> -->
+<meta property="og:image" content="https://yuko-fujtia.com/img/siteicon.png" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-<!-- <link rel="stylesheet" href="https://use.typekit.net/wfo6och.css"> -->
 
 <link rel="stylesheet" type="text/css" href="lib/ress.min.css">
 
@@ -38,6 +36,7 @@
 </head>
 
 <body>
+  <div id="contents">
   <div id="particles-js"></div> 
 
   <div id="loader">
@@ -54,7 +53,7 @@
   <div class="swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide slide1">
-        <div class="slide-media img-cover"><img src="img/test1.png" alt="" data-swiper-parallax-scale="1.5" data-swiper-parallax-x="80%"></div>
+        <div class="slide-media img-cover size"><img src="img/portfolio.png" alt="" data-swiper-parallax-scale="1.5" data-swiper-parallax-x="80%"></div>
         <p class="text"><span class="mask-base"><span class="mask">
           <a href="#portfolio-popup" class="hover-arrow">MyPortfolioSite</a>
         </span></span></p>
@@ -73,6 +72,28 @@
       </div>
     </div>
     <div class="swiper-pagination"></div>
+  </div>
+
+  <div id="portfolio-popup">
+    <span class="popup-close"><a href="#">&times</a></span>
+    <div class="portfolio popup">
+      <div class="book-demo demo-img"><img src="img/portfolio-demo.png"></div>
+      <div class="popup-cont">
+        <h1>ポートフォリオサイト(このサイト)</h1>
+        <p class="site-link">サイトリンク : <a href="https://yuko-fujtia.com/" class="hover-underline" target="_blank" rel="noopener noreferrer">ポートフォリオサイト(トップへ飛びます)</a></p>
+        <dl>
+          <dt class="slash">製作期間</dt>
+          <dd>約15日</dd>
+          <dt class="slash">コンセプト</dt>
+          <dd>
+            私の製作物、スキル、プロフィールをまとめたサイトです。<br>
+            アニメーションに特徴を持たせ、機能として役割を持ちつつも印象的になるよう工夫しました。<br>
+            製作物については、特に主張したいポイントなので、別ページで表示しています。<br>
+            製作物を象徴するアートワークは、Adobe illustratorを用いて製作しました。
+          </dd>
+        </dl>
+      </div>
+    </div>
   </div>
 
   <div id="illust-popup">
@@ -118,8 +139,7 @@
           <dt class="slash">コンセプト</dt>
           <dd>
             仕掛け絵本をモチーフに製作しました。<br>
-            ひらがなが読める子供が、保護者の方と一緒に楽しめるように、<br>
-            マウスやジャイロの動きに対応してイラストが動くものにしました。<br>
+            マウスの動きに対応してイラストが動きます。<br>
             使用した物語とイラストは自作のものです。<br>
             絵本らしい、柔らかい雰囲気になるように意識しました。<br>
           </dd>
@@ -128,37 +148,15 @@
     </div>
   </div>
 
-  <div id="portfolio-popup">
-    <span class="popup-close"><a href="#">&times</a></span>
-    <div class="portfolio popup">
-      <div class="book-demo demo-img"><img src="img/portfolio-demo.png"></div>
-      <div class="popup-cont">
-        <h1>ポートフォリオサイト(このサイト)</h1>
-        <p class="site-link">サイトリンク : <a href="index.html" class="hover-underline" target="_blank" rel="noopener noreferrer">ポートフォリオサイト(トップへ飛びます)</a></p>
-        <dl>
-          <dt class="slash">製作期間</dt>
-          <dd>約15日</dd>
-          <dt class="slash">コンセプト</dt>
-          <dd>
-            私の製作物、スキル、プロフィールをまとめたサイトです。<br>
-            アニメーションに特徴を持たせ、機能として役割を持ちつつも印象的になるよう工夫しました。<br>
-            製作物については、特に主張したいポイントなので、別ページで表示しています。<br>
-            製作物を象徴するコラージュは、Adobe illustratorを用いて製作しました。
-          </dd>
-        </dl>
-      </div>
-    </div>
-  </div>
-
-
 </main>
 
+</div>
 </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.4/swiper-bundle.min.js"></script>
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="lib/particles.min.js"></script>
+<script src="lib/Stats.js"></script>
 <script src="lib/particle.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/animation.js"></script>

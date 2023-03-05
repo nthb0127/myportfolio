@@ -86,30 +86,21 @@ input , button , textarea , select {
   z-index:0;
 }
 
-@media screen and (min-width:769px) {
-  .submit-btn:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 0;
-    display: block;
-    background: #1f1f1f;
-    transition: .5s;
-    left:0;
-  }
-  .submit-btn:hover input[type = "submit"]{
-      color: #fafafa;
-  }
-  .submit-btn:hover:before {
-    width: 100%;
-    z-index: -1;
-  }
-}
-
-.submit-btn{
+.submit-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
   background: #1f1f1f;
+  transition: .5s;
+  left:0;
 }
-.submit-btn input[type="submit"]{
-  color: #fafafa;
+.submit-btn:hover input[type = "submit"]{
+    color: #fafafa;
+}
+.submit-btn:hover:before {
+  width: 100%;
+  z-index: -1;
 }
